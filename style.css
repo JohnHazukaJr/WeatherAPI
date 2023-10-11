@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body, h1, h2, form, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic layout */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Search form */
+  #search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  #city-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Weather sections */
+  #current-weather, #forecast {
+    margin-top: 1.5rem;
+  }
+  
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Weather data display */
+  #city-info, #forecast-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .weather-card {
+    background-color: white;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    main {
+      padding: 1rem 0.5rem;
+    }
+  
+    #city-info, #forecast-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
